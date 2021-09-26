@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div :class="'text-' + size" class="text-gray-700">
     <slot />
   </div>
 </template>
@@ -7,8 +7,8 @@
 export default {
   props: {
     size: {
-      typeof: String,
-      default: 'md'
+      type: String,
+      default: 'base'
     }
   }
 }
